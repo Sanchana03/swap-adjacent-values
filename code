@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int s=0,rev=0;
+    scanf("%d",&n);
+    for(int i=n;i>0;i=i/10){
+        s=s*10+(i%10);
+    }
+    for(int i=s;i>0;i=i/100){
+        rev=rev*100+(i%100);
+    }
+    printf("%d",rev);
+    
+}
